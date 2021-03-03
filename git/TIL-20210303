@@ -1,0 +1,131 @@
+## Summary of TIL  
+2021.03.03  
+
+## Done
+
+# shell command  
+
+$ pwd : print working directory  
+$ cd (folder): change directory to (folder)  
+$ ls: list segments  
+$ ls -a: list segments of all  
+$ ls -l: list segments line by line  
+$ ls -al: list segments including hidden files  
+$ mkdir (folder): make directory called (folder)  
+$ cd ..: one level up from the current directory  
+$ touch (file): create (file)  
+$ mv (file) (folder): move to the file in the folder  
+$ cp (file) (folder): copy the file in the folder 
+$ rm (file) or (folder): remove the file or folder  
+$ mv (file): rename the file  
+$ mv (file) (folder): rename and move the file to the folder    
+$ rm -r (folder): recursive removal of all the file in the folder  
+$ vi (file): use vi to open an already existing file  
+$ python3 (file): use python3 to open an already existing file 
+$ cat (file): to view contents of a file on the standard output 
+
+1. Removing is different from Deleting  
+Deleting means getting rid of the file  
+On the other hand, Removing means not approchable, instead the file still exists.  
+
+2. Don't forget to type file extension!  
+
+3. There should be a space between a command and (file) or (folder)  
+
+4. Before deleting directory, you should remove all files in that directory.  
+type $ rm -r (folder)  
+But be careful not to type $ rm -r /  
+/ on its own is the root directory of the whole file system. 
+
+5.  To run Python scripts with the python command, you need to run the anaconda first.
+
+**More information about basic commands**  
+[Summary of Basic Commands](https://swcarpentry.github.io/shell-novice/reference)  
+
+# VI Editing commands
+
+i - Insert at cursor (goes into insert mode)  
+a - Write after cursor (goes into insert mode)  
+A - Write at the end of line (goes into insert mode)  
+ESC - Terminate insert mode  
+u - Undo last change  
+U - Undo all changes to the entire line  
+o - Open a new line (goes into insert mode)  
+dd - Delete line  
+3dd - Delete 3 lines.  
+D - Delete contents of line after the cursor  
+C - Delete contents of a line after the cursor and insert new text. Press ESC key to end insertion.  
+dw - Delete word  
+4dw - Delete 4 words  
+cw - Change word  
+x - Delete character at the cursor  
+r - Replace character  
+R - Overwrite characters from cursor onward  
+s - Substitute one character under cursor continue to insert  
+S - Substitute entire line and begin to insert at the beginning of the line  
+~ - Change case of individual character  
+yy or Shift + y - Yank the current line
+p - Put the yanked line below the current line
+Shift + P - Put the yanked line above the current line
+
+- Moving within a file  
+k - Move cursor up  
+j - Move cursor down  
+h - Move cursor left  
+l - Move cursor right  
+
+- Saving and Closing the file  
+Shift+zz - Save the file and quit  
+:w - Save the file but keep it open  
+:q - Quit without saving  
+:wq - Save the file and quit  
+:w! - Force save the file
+:q! - Quit vi but don’t save changes
+
+**More information**  
+[VI Editing commands](https://www.guru99.com/the-vi-editor.html)   
+
+
+#How to use git?
+
+Blob/Tree/Commit  
+
+git add : working directory to staging area  
+git commit : staging area to localrepo  
+git push : local repo to remoterepo  
+
+git configuration  
+$ git config --global user.name " "  
+$ git config --global user.email " "  
+$ git config --global core.editor "vim"  
+$ git config --global core.pager "cat"  
+
+$ git config --list  
+
+# Start project with git init  
+
+$ git init  
+$ git status  
+$ git remote  
+$ git remote add origin (address)  
+$ touch (file)  
+$ git status  
+$ git add (file)  
+$ git status  
+$ git commit  
+$ vi (file)  
+$ git push origin main  
+
+# Start project with git clone  
+
+git clone (address)  
+git status  
+git status - uall  
+
+- After cloning the git, you shouldn't type git init  
+In case you did it, type $ rm -rf .git  
+
+## TO DO  
+
+# Markdown Syntax  
+# why Git is used?
